@@ -47,7 +47,7 @@ export class Web3Service {
     });
   }
 
-  public getContract() {
+  public getContract(): Promise<string>{
     return new Promise((resolve) => {
       const web3 = window.web3;
       let networkId;

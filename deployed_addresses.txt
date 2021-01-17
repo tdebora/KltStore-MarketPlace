@@ -1,0 +1,21 @@
+#### Deploy the contract
+Till now, we have created smart contract and compiled. Now the time for deploy the contract to blockchain which is the ganache, the test blockchain.
+For that, we need to configure this project with the blockchain address and port number which is available in ganache settings. We can provide this information truffle.js or truffle-config.js in the project folder.
+```sh
+module.exports = {
+  networks: {
+    development: {
+      host: '127.0.0.1',
+      port: 7545,
+      network_id: '*' // Match any network id
+    }
+  }};
+```
+##### 6. Metamask
+Metamask acts as web3 injector to our page.
+
+- Add extension to your chrome browser
+- Add custom RPC with your ganache rpc url which would http://localhost:7545
+- You can see your ganache generated first account in metamask accounts list
+- You user submits a change from page which invokes the contract method, metamask asks for confirmation
+
