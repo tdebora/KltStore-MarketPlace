@@ -57,6 +57,7 @@ export class Web3Service {
           const abi = kltArtifacts.abi;
           const networkAddress = kltArtifacts.networks[networkId].address;
           const KltStore = new web3.eth.Contract(abi, networkAddress);
+          console.log(kltArtifacts);
           resolve(KltStore);
         });
     });
