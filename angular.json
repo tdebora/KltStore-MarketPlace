@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "KltStore:"
+  "defaultProject": "KltStore:",
+  "cli": {
+    "analytics": false
+  }
 }
