@@ -68,14 +68,14 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "KltStore::build:production"
+              "browserTarget": "KltStore:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "KltStore::build"
+            "browserTarget": "KltStore:build"
           }
         },
         "test": {
@@ -113,19 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "KltStore::serve"
+            "devServerTarget": "KltStore:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "KltStore::serve:production"
+              "devServerTarget": "KltStore:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "KltStore:",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "KltStore"
 }

@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     development: {
       host: '127.0.0.1',
-      port: 7545,
+      port: 8545,
       network_id: '*' // Match any network id
     }
   }};
@@ -15,7 +15,7 @@ module.exports = {
 Metamask acts as web3 injector to our page.
 
 - Add extension to your chrome browser
-- Add custom RPC with your ganache rpc url which would http://localhost:7545
+- Add custom RPC with your ganache rpc url which would http://localhost:8545
 - You can see your ganache generated first account in metamask accounts list
 - You user submits a change from page which invokes the contract method, metamask asks for confirmation
 

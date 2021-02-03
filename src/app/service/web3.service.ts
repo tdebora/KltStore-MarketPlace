@@ -55,9 +55,11 @@ export class Web3Service {
         .then((netId: any) => {
           networkId = netId;
           const abi = kltArtifacts.abi;
+           //console.log("my endpoint ---------------");
+          //console.log(kltArtifacts.networks[networkId]);
           const networkAddress = kltArtifacts.networks[networkId].address;
           const KltStore = new web3.eth.Contract(abi, networkAddress);
-          console.log(kltArtifacts);
+          //console.log(kltArtifacts);
           resolve(KltStore);
         });
     });
